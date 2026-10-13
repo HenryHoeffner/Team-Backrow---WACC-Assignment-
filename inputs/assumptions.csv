@@ -1,7 +1,7 @@
 item,value,source
-rf,0.04,"TODO (analyst): e.g. the 10-year Treasury yield on FRED (DGS10) as of a date you name"
-mrp,0.05,"TODO (analyst): market risk premium; say where it comes from and why"
-rd,0.055,"TODO (analyst): pre-tax cost of debt; e.g. yield on the firm's bonds or interest expense / total debt"
-tax,0.21,"TODO (analyst): tax rate; statutory or effective (income tax expense / pretax income)"
-w_e,0.70,"TODO (analyst): market cap / (market cap + total debt)"
-w_d,0.30,"TODO (analyst): total debt / (market cap + total debt)"
+rf,0.0522,"10-Year Treasury Constant Maturity Rate (DGS10), FRED (fred.stlouisfed.org/series/DGS10): 5.22% as of 2026-10-08, the most recent observation available"
+mrp,0.0420,"Aswath Damodaran (NYU Stern), implied equity risk premium, trailing 12-month cash yield with adjusted payout: 4.20% as of 2026-10-01 (pages.stern.nyu.edu/~adamodar)"
+rd,0.0565,"Yield to maturity at pricing (5.650%), Eastman Chemical 5.625% senior notes due Feb 2034, CUSIP 277432AY6, per SEC free-writing prospectus filed Feb 2024; secondary-market quotes in Oct 2026 ranged ~5.2%-6.1% across aggregators (TradingView, public.com) but none carried a reliable as-of date, so the at-issuance priced yield is used"
+tax,0.26,"Effective income tax rate for the six months ended June 30 2026: 26% ($101 million provision on pretax earnings), Eastman Chemical Form 10-Q, SEC EDGAR"
+w_e,0.595,"Market cap / (market cap + total debt) = 7.66 / (7.66 + 5.217) = 0.595; market cap $7.66B as of 2026-06-30 (Yahoo Finance key statistics, EMN); total debt $5,217M (short-term borrowings $765M + long-term borrowings $4,452M) as of 2026-06-30, Eastman Chemical Form 10-Q, SEC EDGAR"
+w_d,0.405,"Total debt / (market cap + total debt) = 5.217 / (7.66 + 5.217) = 0.405; total debt $5,217M as of 2026-06-30, Eastman Chemical Form 10-Q, SEC EDGAR; market cap $7.66B as of 2026-06-30, Yahoo Finance key statistics, EMN"
